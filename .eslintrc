@@ -1,0 +1,19 @@
+{
+  "extends": [
+    "plugin:@typescript-eslint/recommended",
+    "plugin:prettier/recommended"
+  ],
+  "parser": "@typescript-eslint/parser",
+  "plugins": ["@typescript-eslint"],
+  "rules": {
+    "prettier/prettier": "warn"
+  },
+  "overrides": [
+    {
+      "files": ["src/**/*.ts"],
+      "parserOptions": {
+        "project": ["./tsconfig.json"]
+      }
+    }
+  ]
+}
